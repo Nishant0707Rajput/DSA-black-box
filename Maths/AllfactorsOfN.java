@@ -1,4 +1,4 @@
-class Solution{
+class AllfactorsOfN{
     public int countFactors(int n){
         int count = 0;
         for(int i = 0; i * i <= n; i++){
@@ -12,6 +12,8 @@ class Solution{
         return count;
     }
 }
+
+// Time complexity is O(sqrt(N))
 
 // Approach behind it is that
 // if i is divisible by n then n / i  will also be divisible by n 
